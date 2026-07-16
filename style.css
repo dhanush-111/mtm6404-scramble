@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2d1538;
+  background: linear-gradient(135deg, #4c1d95, #be185d);
+}
+
+.game {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.game-box {
+  width: 100%;
+  max-width: 550px;
+  padding: 30px;
+  text-align: center;
+  background-color: #fff7ff;
+  border: 3px solid #f0abfc;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(45, 21, 56, 0.35);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #7e22ce;
+  font-size: 40px;
+}
+
+.instructions {
+  margin-bottom: 25px;
+  color: #6b3c75;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.scores p {
+  flex: 1;
+  margin: 0;
+  padding: 12px 5px;
+  color: #ffffff;
+  background-color: #9333ea;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.words-left {
+  color: #7c3a82;
+  font-weight: bold;
+}
+
+.scrambled-word {
+  margin: 20px 0;
+  padding: 22px;
+  color: #be185d;
+  background-color: #fae8ff;
+  border: 3px dashed #d946ef;
+  border-radius: 12px;
+  font-size: 36px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  text-align: left;
+  color: #581c87;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #d8b4fe;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #a21caf;
+  box-shadow: 0 0 0 3px rgba(192, 38, 211, 0.15);
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #7e22ce;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #581c87;
+}
+
+.pass-button {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #db2777;
+}
+
+.pass-button:hover {
+  background-color: #9d174d;
+}
+
+button:disabled {
+  background-color: #c4a5c9;
+  cursor: not-allowed;
+}
+
+.message {
+  min-height: 24px;
+  margin-top: 20px;
+  color: #9d174d;
+  font-weight: bold;
+}
+
+.game-over {
+  padding: 20px;
+  background-color: #fae8ff;
+  border: 2px solid #e879f9;
+  border-radius: 12px;
+}
+
+.game-over h2 {
+  color: #7e22ce;
+}
+
+@media screen and (max-width: 500px) {
+  .game-box {
+    padding: 20px;
+  }
+
+  .scores {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .scrambled-word {
+    font-size: 27px;
+    letter-spacing: 3px;
+  }
+}
